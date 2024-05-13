@@ -62,20 +62,19 @@
 </body>
 
 <footer>
-</li>
 {% if page.categories.first == 'join' %}
 			<li class="nav-link active">
 			{% else %}
 			<li class="nav-link">
 			{% endif %}
 			<a class="mx-1" href="/join"><p></p>Join</a></li>
-</li>
 
 <style>
-	.mx-1{
-		margin-left: 10px;
-	}
+	ul {
+  list-style-type: none;
+}
 </style>
+
         
             <a class="off" href="https://www.ubc.ca">
               <img class="img_ubc" width=350 src="/images/logos/logo_ubc.png">
@@ -89,10 +88,13 @@
 <style>
 	.img_ubc{
 		float:right;
+		margin-bottom: 40px;
+		margin-right: 40px;
 	}
 	.img_aging{
 		float:right;
 		margin-right: 25px;
+		margin-bottom: 40px;
 	}
 </style>
 
