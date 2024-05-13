@@ -1,11 +1,36 @@
 ---
-layout: post
+layout: default
 ---
+
+<nav>
+  <ul>
+      <a class="navbar-brand" href="/">
+          <img class="logo navbar-brand d-inline-block align-top ml-0 mr-1" src="/images/logos/lablogo_white.svg" height="99" width="98.4" />
+      <li><a href="/index.html/"><h1><b>Lim Lab</b></h1></a></li>
+      <li><a href="/blog/">News</a></li>
+      <li><a href="/papers/">Publications</a></li>
+      <li><a href="/research/">Research</a></li>    
+      <li><a href="/team/">Team</a></li>    
+  </ul>
+</nav>
+
+<style>
+  nav ul {
+      display: flex;
+      list-style: none;
+  }
+  nav ul li {
+margin-right: auto;
+  }
+  nav ul li a {
+      text-decoration: none;
+  }
+</style>
 
 <div class="row">
 	<div class="col-lg-12">
 		<div class="smallhead">
-      <p>
+      <p style="font-size:18px;">
         Environmental exposures have been associated with the incidence of 
         age-related illnesses such as cancer, cardiovascular disease, impaired 
         cognitive function, metabolic dysregulation. However, how most 
@@ -14,21 +39,21 @@ layout: post
       </p>
       <style>
         div{
-          max-width: 900px;
+          max-width: 1100px;
           margin-left: auto;
           margin-right: auto;
         }
       </style>
-      <p>
+      <p style="font-size:18px;">
         The Lim Lab investigates how environmental pollutants shape the 
         genomics, transcriptomics and epigenomics of cells to transform normal 
         tissues into disease states. 
       </p>
-      <p>
+      <p style="font-size:18px;">
         We utilize a multi-omic approach to study samples from cancer patients 
         and from individuals who have been exposed to pollution.
       </p>
-      <p>
+      <p style="font-size:18px;">
         Our lab is part of the <a href="https://biochem.ubc.ca">Department of Biochemistry and Molecular Biology</a> and the Edwin S.H. Leong Centre for Healthy Aging. We are located within the Life Sciences Institute at the University of British Columbia, and are affiliated with Canada's Michael Smith Genome Sciences Centre.
       </p>
       <img src="/images/UBC-home-page.png" class="imgMain" height="400" width="850" />
@@ -49,25 +74,27 @@ layout: post
         {% else %}
         <li class="nav-link">
         {% endif %}
-        <a style="font: size 18px;" class="mx-1" href="/join"><p></p>Join</a></li>
+        <a style="font: size 18px;" class="mx-1" href="/join"><p></p><b>Join</b></a></li>
   </li>
   
   <style>
     li {
     list-style-type: none;
-    margin-left: 0px;
-    margin-top: 30px;
+    margin-left: 10px;
+    margin-top: 15px;
     font-size: 20px;
+  }
+    li a {
+      text-decoration: none;
   }
   </style>
   
-          
-              <a class="off" href="https://www.ubc.ca">
-                <img class="img_ubc" width=350 src="/images/logos/logo_ubc.png">
-              </a>
-              &nbsp; &nbsp; &nbsp; &nbsp;
               <a class="off" href="https://healthyaging.med.ubc.ca/">
                 <img class="img_aging" width=60 height="65" src="/images/logos/logo_health_aging.png">
+              </a>
+              &nbsp; &nbsp; &nbsp; &nbsp;
+              <a class="off" href="https://www.ubc.ca">
+                <img class="img_ubc" width=350 src="/images/logos/logo_ubc.png">
               </a>
   </footer>
   
@@ -75,11 +102,11 @@ layout: post
     .img_ubc{
       float:right;
       margin-bottom: 40px;
-      margin-right: 0px;
+      margin-right: 25px;
     }
     .img_aging{
       float:right;
-      margin-right: 25px;
+      margin-right: 0px;
       margin-bottom: 40px;
     }
   </style>
