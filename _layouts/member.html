@@ -30,6 +30,7 @@ layout: default
 
 <head>
 	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+	<script src="https://kit.fontawesome.com/95ffae8b6d.js" crossorigin="anonymous"></script>
 </head>
 
 <div class="row">
@@ -77,8 +78,8 @@ layout: default
 			<div class="bigspacer"></div>
 			{% endif %}
 			{% if member.github %}
-			<div class="smallhead">
-				<h4>GitHub</h4>
+			<div class="icon">
+				<span><h4>GitHub</h4></span>
 			</div>
 			<div class="pad-left note">
 				<div class="smallspacer"></div>
@@ -89,7 +90,6 @@ layout: default
 			{% endif %}
 			{% if member.scholar %}
 			<div class="icon">
-				<i class="material-icons">book</i>
 				<span><h4>Google Scholar</h4></span>
 			</div>
 			<div class="pad-left note">
@@ -124,7 +124,6 @@ layout: default
 			{% if member.email %}
 			{% assign emailarray = member.email | split: '@' %}
 			<div class="icon">
-				<i class="material-icons">computer</i>
 				<span><h4>Email</h4></span>
 			</div>
 			<div class="pad-left note">
@@ -146,10 +145,6 @@ layout: default
 		width:20%;
 		margin-right: 0px;
 		float: left;
-	}
-	.icon {
-		display: flex;
-  		align-items: center;
 	}
 </style>
 
