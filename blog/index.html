@@ -10,9 +10,9 @@ category: blog
   <ul>
       <a class="navbar-brand" href="/">
           <img class="logo navbar-brand d-inline-block align-top ml-0 mr-1" src="/images/logos/lablogo_white.svg" height="99" width="98.4" />
-      <li><a href="/index.html/"><h1><p style="color: #3377c5"><b>Lim Lab</b></p></h1></a></li>
+      <li><a href="/index.html/"><h1><p style="color: #3377c5;">Lim Lab</p></h1></a></li>
       <li><a href="/blog/"><p style="color: #3377c5">News</p></a></li>
-      <li><a href="/papers/"><p style="color: #3377c5">Publications</p></a></li>
+      <li><a href="/publications/"><p style="color: #3377c5">Publications</p></a></li>
       <li><a href="/research/"><p style="color: #3377c5">Research</p></a></li>    
       <li><a href="/team/"><p style="color: #3377c5">Team</p></a></li>    
   </ul>
@@ -45,13 +45,13 @@ margin-top: 0px;
 				<div class="media">
 					<div class="media-body">
 						<div class="title media-heading">
-              <a href="{{ post.url }}" class="txt"><p style="font-size: 22px;">{{ post.title }}</p></a>
+              <a href="{{ post.url }}" class="txt"><p style="font-size: 26px; color:#3377c5">{{ post.title }}</p></a>
 						</div>
 						<p>
 						<div class="smallhead">
 							{{ post.date | date: "%-d %b %Y" }}
 							{% if post.author %}
-							by <a class="off" href="
+							by <a class="author" href="
                 {% for member in site.categories.team %}
                   {% if member.title == post.author %}
                     {{ member.url }}
@@ -59,6 +59,14 @@ margin-top: 0px;
                 {% endfor %}
               ">
               {{ post.author }}
+              <style>
+                .author{
+                    color:black;
+                }
+                .author:hover{
+                  color:#3377c5;
+                }
+              </style>
               </a>
 							{% endif %}
               {% if post.authors %}
@@ -69,8 +77,7 @@ margin-top: 0px;
                     {{ member.url }}
                   {% endif %}
                 {% endfor %}
-              ">
-              {{ post.authors.first }}
+              ">{{ post.authors.first }}
               </a>
               and
               <a class="off" href="
@@ -120,6 +127,7 @@ margin-top: 0px;
   }
   a:hover{
     text-decoration: underline;
+    text-decoration-color:#3377c5;
   }
 </style>
 
