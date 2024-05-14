@@ -32,6 +32,8 @@ margin-top: 0px;
   }
 </style>
 
+<h1>News</h1>
+
 <div class="post-list">
 
 {% for post in site.categories.blog limit: 8 %}
@@ -43,7 +45,7 @@ margin-top: 0px;
 				<div class="media">
 					<div class="media-body">
 						<div class="title media-heading">
-							<a href="{{ post.url }}" class="off">{{ post.title }}</a>
+              <a href="{{ post.url }}" class="txt"><p style="font-size: 22px;">{{ post.title }}</p></a>
 						</div>
 						<p>
 						<div class="smallhead">
@@ -102,7 +104,7 @@ margin-top: 0px;
 				<img class="offset" src="{{ post.image }}">
 				{% endif %}
 				{% endif %}
-				<div class="post">
+				<div style="font-size: 18px" class="post">
 					{{ post.content }}
 				</div>
 			</div>
