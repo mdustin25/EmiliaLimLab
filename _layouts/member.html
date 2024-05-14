@@ -88,8 +88,9 @@ layout: default
 			<div class="bigspacer"></div>
 			{% endif %}
 			{% if member.scholar %}
-			<div class="smallhead">
-				<h4>Google Scholar</h4>
+			<div class="icon">
+				<i class="material-icons">book</i>
+				<span><h4>Google Scholar</h4></span>
 			</div>
 			<div class="pad-left note">
 				<div class="smallspacer"></div>
@@ -122,7 +123,7 @@ layout: default
 			{% endif %}
 			{% if member.email %}
 			{% assign emailarray = member.email | split: '@' %}
-			<div class="smallhead">
+			<div class="icon">
 				<i class="material-icons">computer</i>
 				<span><h4>Email</h4></span>
 			</div>
@@ -141,10 +142,14 @@ layout: default
 		</div>
 
 <style>
-	aside{
+	aside {
 		width:20%;
 		margin-right: 0px;
 		float: left;
+	}
+	.icon {
+		display: flex;
+  		align-items: center;
 	}
 </style>
 
