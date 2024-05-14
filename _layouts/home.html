@@ -55,17 +55,17 @@ margin-top: 0px;
         and from individuals who have been exposed to pollution.
       </p>
       <p style="font-size:18px;">
-        Our lab is part of the <a href="https://biochem.ubc.ca" class="biochem">Department of Biochemistry and Molecular Biology</a> and the Edwin S.H. Leong Centre for Healthy Aging. We are located within the Life Sciences Institute at the University of British Columbia, and are affiliated with Canada's Michael Smith Genome Sciences Centre.
+        Our lab is part of the <a href="https://biochem.ubc.ca" class="homepage_link">Department of Biochemistry and Molecular Biology</a> and the <a href="https://healthyaging.med.ubc.ca/" class="homepage_link">Edwin S.H. Leong Centre for Healthy Aging</a>. We are located within the Life Sciences Institute at the University of British Columbia, and are affiliated with Canada's Michael Smith Genome Sciences Centre.
       </p>
       <style>
-        .biochem{
+        .homepage_link{
           text-decoration: none;
-          color:#3377c5;
+          color:#004da5;
         }
-        .biochem:hover{
+        .homepage_link:hover{
           text-decoration: underline;
-          text-decoration-color:#3377c5;
-          color:#3377c5;
+          text-decoration-color:#004da5;
+          color:#004da5;
         }
       </style>
       <img src="/images/UBC-home-page.png" class="imgMain" height="400" width="850" />
@@ -80,53 +80,38 @@ margin-top: 0px;
     </style>
 
 <footer>
-  <li>	
-  {% if page.categories.first == 'join' %}
-        <li class="nav-link active">
-        {% else %}
-        <li class="nav-link">
-        {% endif %}
-        <a style="font: size 18px;" class="mx-1" href="/join"><p style="color: #3377c5">Join the Team</p></a></li>
-  </li>
-  
-  <style>
-    li {
-    list-style-type: none;
-    margin-left: 10px;
-    margin-top: 15px;
-    font-size: 20px;
-  }
-    li a {
-      text-decoration: none;
-  }
-  li a:hover {
-    text-decoration: underline;
-    text-decoration-color:#3377c5;
-  }
-  </style>
   
               <a class="off" href="https://healthyaging.med.ubc.ca/">
                 <img class="img_aging" width=60 height="65" src="/images/logos/logo_health_aging.png">
+              </a>
+              <a class="off" href="https://biochem.ubc.ca/">
+                <img class="img_biochem" width="60" height="65" src="/images/logos/logo_biochem.png">
+
               </a>
               &nbsp; &nbsp; &nbsp; &nbsp;
               <a class="off" href="https://www.ubc.ca">
                 <img class="img_ubc" width=350 src="/images/logos/logo_ubc.png">
               </a>
-  </footer>
+  
   
   <style>
-    .img_ubc{
-      float:right;
+    .img_ubc {
+      float:left;
       margin-bottom: 40px;
       margin-right: 25px;
-      margin-top: -40px;
+      margin-top: 25px;
     }
-    .img_aging{
+    .img_aging {
       float:right;
       margin-right: 0px;
       margin-bottom: 40px;
-      margin-top: -40px;
+      margin-top: 25px;
+    }
+    .img_biochem {
+      float: right;
+      margin-right: 25px;
+      margin-top: 25px;
     }
   </style>
-
+</footer>
 </div>

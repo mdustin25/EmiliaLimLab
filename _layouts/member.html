@@ -2,29 +2,44 @@
 layout: default
 ---
 <nav>
-    <ul>
-        <a class="navbar-brand" href="/">
-            <img class="logo navbar-brand d-inline-block align-top ml-0 mr-1" src="/images/logos/lablogo_white.svg" height="99" width="98.4" />
-        <li><a href="/index.html/"><h1>Lim Lab</h1></a></li>
-        <li><a href="/blog/">News</a></li>
-        <li><a href="/papers/">Publications</a></li>
-        <li><a href="/research/">Research</a></li> 
-        <li><a href="/team/">Team</a></li>    
-    </ul>
-</nav>
-
+	<ul>
+		<a class="navbar-brand" href="/">
+			<img class="white_logo" src="/images/logos/lablogo_white.svg" height="99" width="98.4" />
+		<li><a href="/index.html/"><h1><p style="color: #3377c5"><b>Lim Lab</b></p></h1></a></li>
+		<li><a href="/blog/"><p style="color: #3377c5">News</p></a></li>
+		<li><a href="/ps/"><p style="color: #3377c5">Publications</p></a></li>
+		<li><a href="/research/"><p style="color: #3377c5">Research</p></a></li>    
+		<li><a href="/team/"><p style="color: #3377c5">Team</p></a></li>    
+	</ul>
+  </nav>
+  
 <style>
-    nav ul {
-        display: flex;
-        list-style: none;
-    }
-    nav ul li {
- margin-right: auto;
-    }
-    nav ul li a {
-        text-decoration: none;
-    }
+	.white_logo{
+		margin-left:-9px;
+		margin-top:0.25px;
+	}
 </style>
+
+  <style>
+	nav ul {
+		display: flex;
+		list-style: none;
+	}
+	nav ul li {
+  margin-right: auto;
+  margin-top: -9px;
+  margin-left: 8px;
+	}
+	nav ul li a {
+		text-decoration: none;
+	}
+	li{
+		margin-left: 10px;
+    margin-top: 15px;
+    font-size: 20px;
+	}
+  </style>
+
 
 {% assign member = page %}
 
@@ -40,7 +55,7 @@ layout: default
 		{% endif %}
 		<div class="titlebox">
 			<div class="bigtitle">
-				<p style="font-size: 40px;">{{ member.title }}</p>
+				<p style="font-size: 54px;">{{ member.title }}</p>
 			</div>
 			<p>
 			<div class="smallhead">
@@ -49,6 +64,20 @@ layout: default
 		</div>
 	</div>
 </div>
+
+<style>
+	.col-lg-12 {
+		display: flex;
+	}
+	.titlebox {
+		margin-right: 670px;
+		margin-top: -60px;
+	}
+	.smallhead {
+		margin-top: -45px;
+		margin-left: 4px;
+	}
+</style>
 
 <div class="bigspacer"></div>
 
@@ -59,7 +88,7 @@ layout: default
 			<div class="smallhead">
 				CV
 			</div>
-			<div class="pad-left note">
+			<div class="pad-left-note">
 				<div class="smallspacer"></div>
 				<i class="fa fa-file-text-o fa-fw"></i>
 				<a class="off" href="{{ member.cv }}">{{ member.cv | split: '/' | last }}</a>
@@ -67,10 +96,10 @@ layout: default
 			<div class="bigspacer"></div>
 			{% endif %}
 			{% if member.twitter %}
-			<div class="smallhead">
+			<div class="icon">
 				<h4>Twitter</h4>
 			</div>
-			<div class="pad-left note">
+			<div class="pad-left-note">
 				<div class="smallspacer"></div>
 				<i class="fa fa-twitter fa-fw"></i>
 				<a class="off" href="https://twitter.com/{{ member.twitter }}">{{ member.twitter }}</a>
@@ -81,7 +110,7 @@ layout: default
 			<div class="icon">
 				<span><h4>GitHub</h4></span>
 			</div>
-			<div class="pad-left note">
+			<div class="pad-left-note">
 				<div class="smallspacer"></div>
 				<i class="fa fa-github-alt fa-fw"></i>
 				<a class="off" href="https://github.com/{{ member.github }}">{{ member.github }}</a>
@@ -92,7 +121,7 @@ layout: default
 			<div class="icon">
 				<span><h4>Google Scholar</h4></span>
 			</div>
-			<div class="pad-left note">
+			<div class="pad-left-note">
 				<div class="smallspacer"></div>
 				<i class="fa fa-book fa-fw"></i>
 				<a class="off" href="http://scholar.google.com/citations?user={{ member.scholar }}">{{ member.title }}</a>
@@ -103,7 +132,7 @@ layout: default
 			<div class="smallhead">
 				Calendar
 			</div>
-			<div class="pad-left note">
+			<div class="pad-left-note">
 				<div class="smallspacer"></div>
 				<i class="fa fa-calendar fa-fw"></i>
 				<a class="off" href="{{ member.calendar }}">{{ member.title }}</a>
@@ -114,7 +143,7 @@ layout: default
 			<div class="smallhead">
 				Website
 			</div>
-			<div class="pad-left note">
+			<div class="pad-left-note">
 				<div class="smallspacer"></div>
 				<i class="fa fa-globe fa-fw"></i>
 				<a class="off" href="{{ member.website }}">{{ member.website | remove: 'http://' | remove: 'https://' | replace: "/", "/<wbr>" | replace: "_", "_<wbr>" }}</a>
@@ -126,7 +155,7 @@ layout: default
 			<div class="icon">
 				<span><h4>Email</h4></span>
 			</div>
-			<div class="pad-left note">
+			<div class="pad-left-note">
 				<div class="smallspacer"></div>
 				<i class="fa fa-inbox fa-fw"></i>
 				{{ emailarray.first }}<span style="display:none">obfuscate</span>@{{ emailarray.last }}
@@ -135,7 +164,7 @@ layout: default
 			{% endif %}
 		</div>
 		<div class="col-lg-8">
-			<div class="post">
+			<div class="content">
 				{{ content }}
 		</aside>
 		</div>
@@ -145,6 +174,24 @@ layout: default
 		width:20%;
 		margin-right: 0px;
 		float: left;
+	}
+	.content {
+		margin-left:222px;
+	}
+	.icon {
+		margin-left: 0px;
+	}
+	.pad-left-note {
+		margin-left: 10px;
+		margin-top: -10px;
+	}
+	.off {
+		text-decoration: none;
+		color: black
+	}
+	.off:hover {
+		text-decoration: underline;
+		color: #004da5;
 	}
 </style>
 

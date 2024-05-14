@@ -92,3 +92,28 @@ categories:
     {% endif %}
 {% endfor %}
 {% cycle 'close rows 2': '', '</div>', '</div>' %}
+
+<li>	
+	{% if page.categories.first == 'join' %}
+		  <li class="nav-link active">
+		  {% else %}
+		  <li class="nav-link">
+		  {% endif %}
+		  <a style="font: size 18px;" class="mx-1" href="/join"><p style="color: #3377c5">Join the Team</p></a></li>
+	</li>
+	
+	<style>
+	  li {
+	  list-style-type: none;
+	  margin-left: 10px;
+	  margin-top: 15px;
+	  font-size: 20px;
+	}
+	  li a {
+		text-decoration: none;
+	}
+	li a:hover {
+	  text-decoration: underline;
+	  text-decoration-color:#3377c5;
+	}
+	</style>
