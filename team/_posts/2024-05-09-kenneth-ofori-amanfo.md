@@ -2,7 +2,7 @@
 layout: member
 title: Kenneth Ofori-Amanfo
 position: Research Assisstant
-image: 
+image: /images/team/kenneth.png
 ---
 
 Kenneth is entering his 4th year in biochemistry. He has always had an interest in human health and technology. Working in the Lim lab allows him to expand his knowledge of his interests. Kenneth is now looking for gene regulation trends associated with different exposures.
