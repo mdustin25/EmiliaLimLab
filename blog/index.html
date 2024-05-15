@@ -64,8 +64,15 @@ category: blog
 				<div class="media">
 					<div class="media-body">
 						<div class="title media-heading">
-              <a href="{{ post.url }}" class="txt"><p style="font-size: 26px; color:#3377c5">{{ post.title }}</p></a>
+              <p class="post_title" style="font-size: 26px; color:#0055b7">{{ post.title }}</p>
 						</div>
+              <style>
+                .post_title {
+                  margin-bottom: -7px;
+                  margin-top: -4px;
+                  font-weight: 600;
+                }
+              </style>
 						<p>
 						<div class="smallhead">
 							{{ post.date | date: "%-d %b %Y" }}
@@ -115,6 +122,13 @@ category: blog
 			</div>
 			<div class="col-lg-1"></div>
 		</div>
+
+<style>
+  .smallhead {
+    margin-top: 20px;
+    margin-left: 20px;
+  }
+</style>
 
 		<div class="bigspacer"></div>
 
