@@ -8,14 +8,14 @@ categories:
 <h1>Current Members</h1>
 
 <div class="bigspacer"></div>
-<div class="team_page">
+<div class="team">
 {% for member in site.categories.team reversed %}
 	{% if member.alumni != true %}
     {% cycle 'add rows': '<div class="row">', '', '' %}
 		<div class="col-lg-4 memberbox">
 			<div class="media">
-  				<a class="float-left" href="{{ member.url }}">
-    				<img width=160 class="mr-3" src="{{ member.image }}">
+  				<a class="member_image" href="{{ member.url }}">
+    				<img width=160 class="member_image" src="{{ member.image }}">
   				</a>
  			 	<div class="media-body">
     				<div class="head mb-1"><a href="{{ member.url }}" class="member_title">{{ member.title }}</a></div>
@@ -23,12 +23,20 @@ categories:
   				</div>
 				<style>
 					.member_title {
+						margin-top: 5px;
 						text-decoration: none;
-						color: #3377c5;
-						font-size: 20px;
+						color: black;
+						font-size: 22px;
 					}
 					.member_title:hover {
-						color: #004492
+						color: #3377c5;
+					}
+					.member_position {
+						margin-top: 4px;
+						font-size: 14px;
+					}
+					.member_image {
+						margin-bottom: 5px;
 					}
 				</style>
 			</div>
@@ -54,7 +62,7 @@ categories:
   				</a>
   				-->
  			 	<div class="media-body">
-    				<div class="head media-heading"><a href="{{ member.url }}" class="off">{{ member.title }}</a></div>
+    				<div class="media_title"><a href="{{ member.url }}">{{ member.title }}</a></div>
     				<p class="note">{{ member.position }}</p>
   				</div>
 			</div>
@@ -64,16 +72,14 @@ categories:
     {% endif %}
 {% endfor %}
 {% cycle 'close rows 2': '', '</div>', '</div>' %}
-</div>
-
 <style>
-	.team_page {
-		display: flex;
-		flex-direction: row;
-		justify-content: center;
-		align-items: center;
+	.team {
+		column-count: 4;
+		margin-left: 30px;
 	}
-</style>
+</style>	
+	
+</div>
 
 <div class="join">
 	<li>	
@@ -82,7 +88,7 @@ categories:
 		  {% else %}
 		  <li class="nav-link">
 		  {% endif %}
-		  <a style="font: size 18px;" class="mx-1" href="/join"><p style="color: #3377c5">Join the Team</p></a></li>
+		  <a style="font: size 18px;" class="mx-1" href="/join"><p>Join the Team</p></a></li>
 	</li>
 </div>	
 
@@ -94,9 +100,9 @@ categories:
 	}
 	  .join li a {
 		text-decoration: none;
+		color: #6699d4;
 	}
 	.join li a:hover {
-	  text-decoration: underline;
-	  text-decoration-color:#3377c5;
+	  color:#004492;
 	}
 	</style>
