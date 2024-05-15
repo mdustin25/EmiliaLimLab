@@ -19,7 +19,7 @@ category: news
 				<div class="media">
 					<div class="media-body">
 						<div class="title media-heading">
-              <p class="post_title" style="font-size: 26px; color:#0055b7">{{ post.title }}</p>
+              <p class="post_title" style="font-size: 24px; color:#0055b7">{{ post.title }}</p>
 						</div>
               <style>
                 .post_title {
@@ -99,9 +99,14 @@ category: news
 				<img class="offset" src="{{ post.image }}">
 				{% endif %}
 				{% endif %}
-				<div style="font-size: 18px" class="post">
+				<div class="content">
 					{{ post.content }}
 				</div>
+        <style>
+          .content {
+            margin-bottom:30px;
+          }
+        </style>
 			</div>
 			<div class="col-lg-1"></div>
 		</div>

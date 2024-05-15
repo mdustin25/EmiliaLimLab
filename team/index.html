@@ -18,9 +18,19 @@ categories:
     				<img width=160 class="mr-3" src="{{ member.image }}">
   				</a>
  			 	<div class="media-body">
-    				<div class="head mb-1"><a href="{{ member.url }}" class="off">{{ member.title }}</a></div>
-    				<p class="note">{{ member.position }}</p>
+    				<div class="head mb-1"><a href="{{ member.url }}" class="member_title">{{ member.title }}</a></div>
+    				<p class="member_position">{{ member.position }}</p>
   				</div>
+				<style>
+					.member_title {
+						text-decoration: none;
+						color: #3377c5;
+						font-size: 20px;
+					}
+					.member_title:hover {
+						color: #004492
+					}
+				</style>
 			</div>
 			<div class="bigspacer"></div>
 			<div class="bigspacer"></div>

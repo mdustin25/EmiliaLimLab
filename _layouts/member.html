@@ -138,6 +138,8 @@ layout: default
 	}
 	.content {
 		margin-left:222px;
+		margin-bottom: -10px;
+		margin-top: -5px;
 	}
 	.icon {
 		margin-left: 0px;
@@ -152,10 +154,10 @@ layout: default
 	}
 	.off:hover {
 		text-decoration: underline;
-		color: #004da5;
+		color: #6699d4;
 	}
 </style>
-
+	<div class="team_layout">
 		{% assign lastname = member.title | split: ' ' | last %}
 		{% assign firstinitial = member.title | split: ' ' | first | slice: 0 %}
 		{% assign searchstring = lastname | append: ' ' | append: firstinitial %}
@@ -240,7 +242,13 @@ layout: default
 				{% endif %}
 			{% endfor %}
 		{% endif %}
-
 	</div>
 	<div class="col-lg-1"></div>
+</div>
+<style>
+	.team_layout {
+		display: inline-block;
+		text-align: center;
+	}
+</style>
 </div>
