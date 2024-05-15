@@ -2,5 +2,5 @@
 layout: member
 title: Maya Dustin
 position: Research Assisstant
-image: 
+image: /images/team/blue-background.jpg
 ---

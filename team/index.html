@@ -8,7 +8,7 @@ categories:
 <h1>Current Members</h1>
 
 <div class="bigspacer"></div>
-
+<div class="team_page">
 {% for member in site.categories.team reversed %}
 	{% if member.alumni != true %}
     {% cycle 'add rows': '<div class="row">', '', '' %}
@@ -64,8 +64,19 @@ categories:
     {% endif %}
 {% endfor %}
 {% cycle 'close rows 2': '', '</div>', '</div>' %}
+</div>
 
-<li>	
+<style>
+	.team_page {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+	}
+</style>
+
+<div class="join">
+	<li>	
 	{% if page.categories.first == 'join' %}
 		  <li class="nav-link active">
 		  {% else %}
@@ -73,17 +84,18 @@ categories:
 		  {% endif %}
 		  <a style="font: size 18px;" class="mx-1" href="/join"><p style="color: #3377c5">Join the Team</p></a></li>
 	</li>
-	
+</div>	
+
 	<style>
-	  li {
+	  .join li {
 	  list-style-type: none;
 	  margin-top: 15px;
 	  font-size: 20px;
 	}
-	  li a {
+	  .join li a {
 		text-decoration: none;
 	}
-	li a:hover {
+	.join li a:hover {
 	  text-decoration: underline;
 	  text-decoration-color:#3377c5;
 	}
