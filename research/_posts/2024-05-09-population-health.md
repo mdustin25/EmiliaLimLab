@@ -2,6 +2,7 @@
 layout: research
 title: Population Health
 subtitle: Identifying specific cancer subtypes associated with high levels of environmental pollutant exposure
+image: /images/icons/lungs-solid.png
 ---
 
 
