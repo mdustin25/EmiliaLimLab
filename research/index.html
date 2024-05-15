@@ -29,11 +29,10 @@ categories:
   <div class="col-lg-4 paperbox">
     <div class="media">
       <div class="media-body">
-        <div class="title"><p>{{ research.title }}</p></div>
+        <div class="title"><p><img class="icons" src="{{ research.image }}">{{ research.title }}</p></div>
         <div class="subtitle"><p>{{ research.subtitle }}</p></div>
         <div class="content"><p>{{research.content}}</p></div>
       </div>
-        <img class="ml-3" width=100 class="media-object" src="{{ research.image }}">
     </div>
     <div class="bigspacer"></div>
     <div class="spacer"></div>
@@ -49,7 +48,12 @@ categories:
     color: #3377c5;
 }
 .content {
-    margin-bottom: -30px;
+  line-height: 1.5;
+}
+.icons {
+  width: 45px;
+  margin-right: 8px; 
+  margin-bottom: -5px;
 }
  </style>   
 </div>
