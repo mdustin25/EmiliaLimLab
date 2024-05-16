@@ -6,7 +6,7 @@ year: 2015
 ref: Lim et al. Genome Biology. 2015.
 journal: Genome Biology
 doi: 10.1186/s13059-014-0568-y
-image: /images/papers/lim-genome-biology-microrna-dlbcl.png
+image: /images/publications/lim-genome-biology-microrna-dlbcl.png
 pub-url: https://genomebiology.biomedcentral.com/articles/10.1186/s13059-014-0568-y
 ---
 

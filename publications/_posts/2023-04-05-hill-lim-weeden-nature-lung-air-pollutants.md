@@ -6,7 +6,7 @@ year: 2023
 ref: Hill*, Lim*, Weeden* et al. Nature. 2023.
 journal: Nature
 doi: 10.1038/s41586-023-05874-3
-image: /images/papers/lim-genome-biology-microrna-dlbcl.png
+image: /images/publications/lim-lung.png
 pub-url: https://doi.org/10.1038/s41586-023-05874-3
 ---
 
