@@ -15,7 +15,7 @@ categories:
 		<div class="col-lg-4 memberbox">
 			<div class="media">
   				<a class="member_image" href="{{ member.url }}">
-    				<img width=160 class="member_image" src="{{ member.image }}">
+    				<img width=130 height="130" class="member_image" src="{{ member.image }}">
   				</a>
  			 	<div class="media-body">
     				<div class="head mb-1"><a href="{{ member.url }}" class="member_title">{{ member.title }}</a></div>
@@ -36,7 +36,7 @@ categories:
 						font-size: 14px;
 					}
 					.member_image {
-						margin-bottom: 5px;
+						margin-top: -5px;
 					}
 				</style>
 			</div>
@@ -75,11 +75,25 @@ categories:
 <style>
 	.team {
 		column-count: 4;
-		margin-left: 20px;
+		margin-left: 100px;
 	}
 </style>	
 	
 </div>
+
+<div>
+	<img class="team_img" width="500" height="350" src="/images/team/lim-lab-team.jpg">
+</div>
+
+<style>
+.team_img {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 5px;
+	margin-top: 2px;
+}
+</style>
 
 <div class="join">
 	<li>	
@@ -93,16 +107,21 @@ categories:
 </div>	
 
 	<style>
-	  .join li {
+	.join li {
 	  list-style-type: none;
 	  margin-top: 15px;
 	  font-size: 20px;
 	}
-	  .join li a {
+	.join li a {
 		text-decoration: none;
 		color: #6699d4;
 	}
 	.join li a:hover {
-	  color:#004492;
+	  	color:#004492;
+	}
+	.join {
+		float: right;
+		margin-top: -57px;
+		margin-right: 50px;
 	}
 	</style>
