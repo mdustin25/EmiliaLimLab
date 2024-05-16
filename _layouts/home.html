@@ -1,11 +1,140 @@
 ---
-layout: default
+
 ---
+
+<!DOCTYPE html>
+<html lang="en">
+
+<div>
+	<nav>
+		<ul>
+			<a class="navbar-brand" href="/">
+				<img class="white_logo" src="/images/logos/lablogo_white.jpg" height="99" width="95" />
+      <li><a href="/index.html/"><h1><p class="lim_lab"><b><nobr>Lim Lab</nobr></b></p></h1></a></li>
+			<div class="nav_tabs">
+			<li><a href="/news/"><p class="nav">News</p></a></li>
+			<li><a href="/research/"><p class="nav">Research</p></a></li>
+			<li><a href="/publications/"><p class="nav">Publications</p></a></li>
+			<li><a href="/team/"><p class="nav">Team</p></a></li>  
+      </div>  
+		</ul>
+	  </nav>
+</div>
+  
+<style>
+	.white_logo{
+
+		margin-top: 0px;
+    margin-right: 0px;
+    margin-left: -35px;
+	}
+	nav ul {
+		display: flex;
+		list-style: none;
+	}
+	nav ul li {
+  margin-top: -16px;
+	}
+	nav ul li a {
+		text-decoration: none;
+		color: #6699d4;
+	}
+	nav ul li a:hover {
+		text-decoration: none;
+		color: #004492;
+	}
+	li {
+		margin-left: 10px;
+    margin-top: 15px;
+	}
+  .nav_tabs {
+		display: flex;
+    position: sticky;
+		margin-left: 356px;
+		margin-right: 40px;
+    margin-top: 10px;
+	}
+  .lim_lab {
+    margin-top: 30px;
+    font-size: 60px;
+  }
+  .nav {
+    font-size: 21px;
+    margin-top: 10px;
+  }
+	div {
+	  max-width: 1100px;
+    margin-left: auto;
+	  margin-right: auto;
+	}
+  </style>
+
+<head>
+	<meta charset="utf-8"/>
+	<title>{{ page.title }}</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- RSS feed -->
+	<link rel="alternate" type="application/rss+xml" title="{{ site.name }}" href="{{ site.url }}/feed.xml">
+
+  <!-- Customized Bootstrap + Font Awesome + Solarized -->
+  <link href="/css/style.css" rel="stylesheet" media="screen">
+
+	<!-- Favicon -->
+	<link rel="shortcut icon" href="/images/logos/lablogo_white.jpg"/>
+
+	<!-- Typekit -->
+	<script>
+	  (function(d) {
+		var config = {
+		  kitId: 'xeu8jut',
+		  scriptTimeout: 3000
+		},
+		h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='//use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+	  })(document);
+	</script>
+
+	<!-- Google Analytics -->
+	<script>
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+		ga('create', 'UA-26244371-2', 'bedford.io');
+		ga('send', 'pageview');
+
+	</script>
+
+	<!-- jQuery -->
+	<script src="/js/jquery.min.js"></script>
+
+	<!-- Bootstrap -->
+	<script src="/js/bootstrap.min.js"></script>
+
+</head>
+
+<body>
+					</ul>
+				</div>
+			</div>
+		</nav>
+	</div>
+
+	<div class="container mt-4">
+
+	{{ content }}
+
+	</div>
+
+</body>
+
+</html>
 
 <div class="row">
 	<div class="col-lg-12">
 		<div class="smallhead">
-      <p style="font-size:18px;">
+      <p style="font-size:18px; margin-top: -35px;">
         Environmental exposures have been associated with the incidence of 
         age-related illnesses such as cancer, cardiovascular disease, impaired 
         cognitive function, metabolic dysregulation. However, how most 
@@ -57,13 +186,13 @@ layout: default
 <footer>
   
               <a class="off" href="https://healthyaging.med.ubc.ca/">
-                <img class="img_aging" width=60 height="65" src="/images/logos/logo_health_aging.png">
+                <img class="img_aging" width=57 height="62" src="/images/logos/logo_health_aging.png">
               </a>
               <a class="off" href="https://biochem.ubc.ca/">
-                <img class="img_biochem" width="60" height="65" src="/images/logos/logo_biochem.png">
+                <img class="img_biochem" width="57" height="62" src="/images/logos/logo_biochem.png">
               </a>
               <a class="off" href="https://meg.lsi.ubc.ca/">
-                <img class="img_meg" width="140" height="65" src="/images/logos/logo_meg.png">
+                <img class="img_meg" width="140" height="62" src="/images/logos/logo_meg.png">
               </a>
               &nbsp; &nbsp; &nbsp; &nbsp;
               <a class="off" href="https://www.ubc.ca">
@@ -76,23 +205,19 @@ layout: default
       float:left;
       margin-bottom: 10px;
       margin-right: 25px;
-      margin-top: 10px;
     }
     .img_aging {
       float:right;
       margin-right: 0px;
       margin-bottom: 10px;
-      margin-top: 10px;
     }
     .img_biochem {
       float: right;
       margin-right: 25px;
-      margin-top: 10px;
     }
     .img_meg {
       float: right;
       margin-right: 8px;
-      margin-top: 10px;
     }
   </style>
 </footer>
