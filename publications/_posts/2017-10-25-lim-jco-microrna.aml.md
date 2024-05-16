@@ -5,7 +5,7 @@ authors: Emilia L. Lim, Diane L. Trinh, Rhonda E. Ries, Jim Wang, Robert B. Gerb
 year: 2017
 ref: Lim et al. Journal of Clinical Oncology. 2017.
 journal: "Journal of Clinical Oncology"
-image: /images/papers/lim-genome-biology-microrna-dlbcl.png
+image: /images/publications/lim-microrna.png
 pub-url: https://ascopubs.org/doi/10.1200/JCO.2017.74.7451
 ---
 

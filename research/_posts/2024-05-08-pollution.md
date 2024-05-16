@@ -1,6 +1,6 @@
 ---
 layout: research
-title: Wood Smoke Exposure
+title: Pollution
 subtitle: Identifying the molecular effects of pollution exposure on our cells, and investigating if they can be mitigated.
 image: /images/icons/smog-solid.png
 ---

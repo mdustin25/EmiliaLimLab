@@ -6,7 +6,7 @@ year: 2020
 ref: Watkins*, Lim*, et al. Nature. 2020.
 journal: Nature
 doi: 10.1038/s41586-020-2698-6
-image: /images/papers/lim-genome-biology-microrna-dlbcl.png
+image: /images/publications/lim-pervasive.png
 pub-url: https://www.nature.com/articles/s41586-020-2698-6
 ---
 
