@@ -5,7 +5,15 @@ categories:
  - research
 ---
 
-<h1>Research Projects</h1>
+<h1 class="research">Research Projects</h1>
+
+<style>
+  .research {
+    float: left;
+    margin-top: -10px;
+    margin-bottom: -10px;
+  }
+</style>
 
 {% for research in site.categories.research %}
 
@@ -40,11 +48,11 @@ categories:
 .subtitle {
     font-size: 17px;
     margin-top: -15px;
-    margin-bottom: -8px;
+    margin-bottom: -14px;
     color: #3377c5;
 }
 .content {
-  line-height: 1.75;
+  line-height: 1.5;
   font-size: 15px;
 }
 .icons {

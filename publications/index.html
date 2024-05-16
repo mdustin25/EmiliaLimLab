@@ -5,8 +5,13 @@ categories:
  - publications
 ---
 
-<h1>Selected Publications</h1>
+<h1 class="publications">Selected Publications</h1>
 
+<style>
+    .publications {
+      margin-top: -10px;
+    }
+  </style>
 
 {% for publications in site.categories.publications %}
 
@@ -50,7 +55,6 @@ categories:
     }
     .pub_img {
         float: left;
-        margin-right: 25px;
     }
     .publication li {
         margin-bottom: 60px;
