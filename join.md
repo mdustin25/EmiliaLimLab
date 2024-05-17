@@ -1,8 +1,7 @@
 ---
 layout: misc
+title: Join the Team
 ---
-
-<h1>Join the Team</h1>
 
 We are seeking outstanding and motivated graduate students with research 
 interests in genomics, transcriptomics, epigenomics, environmental exposures 
